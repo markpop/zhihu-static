@@ -12,6 +12,9 @@ body {
 	.swipe {
 		height: 200px;
 	}
+	.article-header {
+		height: 200px;
+	}
 }
 @media screen and (min-width: 480px) {
 	.menu {
@@ -21,6 +24,9 @@ body {
 		padding: 66px 0 66px 0;
 	}
 	.swipe {
+		height: 300px;
+	}
+	.article-header {
 		height: 300px;
 	}
 }
@@ -161,6 +167,7 @@ body {
 	font-size: 30px;
 }
 /*end header*/
+/*list*/
 .list-item {
 	border-bottom: 1px solid #d3d3d3;
 }
@@ -174,3 +181,52 @@ body {
 .list-item-img {
 	padding: 10px;
 }
+/*end list*/
+/*article*/
+.article-header {
+	position: relative;
+	overflow: hidden;
+}
+.article-header-title {
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	bottom: 0;
+	padding: 20px;
+	font-size: 20px;
+}
+.article-author {
+	padding: 20px;
+}
+.article-author-img img {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.article-author-desc {
+	font-size: 12px;
+	line-height: 18px;
+}
+.article-content {
+	padding: 0 20px;
+	overflow: auto;
+	font-size: 16px;
+}
+.article-content p {
+	padding-bottom: 20px;
+}
+/*end article*/
+/*footer*/
+.article-footer {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	color: #9B9B9B;
+	bottom: 0;
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+}
+/*end footer*/
