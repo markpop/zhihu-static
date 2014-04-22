@@ -1,6 +1,6 @@
 $(function () {
 	// menu
-	$('.icon-menu2').tap(function () {
+	$('.icon-list5').tap(function () {
 		$('.cover').removeClass('none');
 		$('.wrapper').addClass('open');
 		$('.menu').addClass('open');
@@ -10,10 +10,13 @@ $(function () {
 		$('.menu').removeClass('open');
 		$('.cover').addClass('none');
 	});
+	$('.icon-moon2').tap(function () {
+		$('.wrapper').toggleClass('night');
+	});
 	// end menu
 	// slider
 	var mySwipe = new Swipe(document.getElementById('slider'), {
-		speed: 400,
+		speed: 1000,
 		auto: 3000,
 		continuous: true,
 		disableScroll: false,

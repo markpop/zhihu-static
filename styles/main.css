@@ -56,6 +56,24 @@ body {
 	color: #000;
 	opacity: 0.8;
 }
+.menu-circle {
+	width: 46px;
+}
+.menu-circle-border {
+	border: 1px solid #fff;
+	width: 46px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	border-radius: 23px;
+}
+.menu-circle-message {
+	text-align: center;
+	font-size: 12px;
+	line-height: 25px;
+}
 /*end menu*/
 /*slider*/
 .swipe {
@@ -105,6 +123,10 @@ body {
 	background-color: #fff;
 	width: 100%;
 }
+.wrapper.night {
+	background-color: #444;
+	color: #B7B7B7;
+}
 .wrapper.open {
 	-webkit-transform: perspective(600px) translateX(180px) rotateY(-30deg);
 	-moz-transform: perspective(600px) translateX(180px) rotateY(-30deg);
@@ -130,9 +152,20 @@ body {
 	text-align: center;
 	line-height: 40px;
 }
+.wrapper.night .topnav {
+	background-color: #444;
+	color: #B7B7B7;
+}
+.topnav .col-2 {
+	color: #fff;
+	font-size: 30px;
+}
 /*end header*/
 .list-item {
 	border-bottom: 1px solid #d3d3d3;
+}
+.wrapper.night .list-item {
+	border-bottom: 1px solid #303030;
 }
 .list-item-content {
 	font-size: 15px;
