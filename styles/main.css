@@ -1,24 +1,45 @@
 body {
-	background-image: url('../images/bg.jpg'); 
+	background-image: url('../images/bg.jpg');
 }
-.wrapper {
-	width: 100%;
+/*media*/
+@media screen and (min-width: 320px) {
+	.menu {
+		width: 197px;
+	}
+	.menu-wrapper {
+		padding: 34px 0 34px 0;
+	}
+	.swipe {
+		height: 200px;
+	}
 }
+@media screen and (min-width: 480px) {
+	.menu {
+		width: 218px;
+	}
+	.menu-wrapper {
+		padding: 66px 0 66px 0;
+	}
+	.swipe {
+		height: 300px;
+	}
+}
+/*end media*/
 /*menu*/
 .menu {
-	width: 70%;
 	height: 100%;
 	position: fixed;
 	color: #fff;
 	font-size: 18px;
-	margin-left: -70%;
+	margin-left: -197px;
 }
 .menu.open {
-	-webkit-transform: translateX(100%);
-	-moz-transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	-o-transform: translateX(100%);
-	transform: translateX(100%);
+	-webkit-transform: translateX(197px);
+	-moz-transform: translateX(197px);
+	-ms-transform: translateX(197px);
+	-o-transform: translateX(197px);
+	transform: translateX(197px);
+	z-index: -999;
 }
 .menu, .menu.open {
 	-webkit-transition: all 0.5s ease-in-out;
@@ -27,15 +48,13 @@ body {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-.menu-wrapper {
-	padding: 28px 0 28px 0;
-}
 .menu-item {
-	padding: 20px;
+	padding: 15px;
 }
 .menu-item.active {
-	background-color: #000;
-	opacity: 0.5;
+	background-color: #fff;
+	color: #000;
+	opacity: 0.8;
 }
 /*end menu*/
 /*slider*/
@@ -53,6 +72,28 @@ body {
   width:100%;
   position: relative;
 }
+.nav-bullets {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+}
+.bullet {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: #d5d5d5;
+	opacity: 0.5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 3px;
+}
+.bullet.active {
+	background-color: #fff;
+	opacity: 1;
+}
 /*end slider*/
 .cover {
 	position: fixed;
@@ -62,6 +103,7 @@ body {
 }
 .wrapper {
 	background-color: #fff;
+	width: 100%;
 }
 .wrapper.open {
 	-webkit-transform: perspective(600px) translateX(180px) rotateY(-30deg);
@@ -70,7 +112,6 @@ body {
 	-o-transform: perspective(600px) translateX(180px) rotateY(-30deg);
 	transform: perspective(600px) translateX(180px) rotateY(-30deg);
 	position: fixed;
-	height: 100%;
 	overflow: hidden;
 }
 .wrapper, .wrapper.open {
