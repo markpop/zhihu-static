@@ -1,6 +1,40 @@
 body {
 	background-image: url('../images/bg.jpg'); 
 }
+/*menu*/
+.menu {
+	width: 70%;
+	height: 100%;
+	position: fixed;
+	color: #fff;
+	font-size: 18px;
+	margin-left: -70%;
+}
+.menu.open {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+}
+.menu, .menu.open {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.menu-wrapper {
+	padding: 28px 0 28px 0;
+}
+.menu-item {
+	padding: 20px;
+}
+.menu-item.active {
+	background-color: #000;
+	opacity: 0.5;
+}
+/*end menu*/
 .cover {
 	position: fixed;
 	width: 100%;
@@ -11,11 +45,11 @@ body {
 	background-color: #fff;
 }
 .wrapper.open {
-	-webkit-transform: perspective(600px) translateX(180px) rotateY(-40deg);
-	-moz-transform: perspective(600px) translateX(180px) rotateY(-40deg);
-	-ms-transform: perspective(600px) translateX(180px) rotateY(-40deg);
-	-o-transform: perspective(600px) translateX(180px) rotateY(-40deg);
-	transform: perspective(600px) translateX(180px) rotateY(-40deg);
+	-webkit-transform: perspective(600px) translateX(180px) rotateY(-30deg);
+	-moz-transform: perspective(600px) translateX(180px) rotateY(-30deg);
+	-ms-transform: perspective(600px) translateX(180px) rotateY(-30deg);
+	-o-transform: perspective(600px) translateX(180px) rotateY(-30deg);
+	transform: perspective(600px) translateX(180px) rotateY(-30deg);
 	position: fixed;
 	height: 100%;
 	overflow: hidden;

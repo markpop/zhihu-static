@@ -9,6 +9,25 @@
 </head>
 <body>
 	<div class="container">
+		<div class="menu">
+			<div class="menu-wrapper">
+				<div class="menu-item active">
+					<span class="icon-home pr10"></span>首页
+				</div>
+				<div class="menu-item">
+					<span class="icon-bubbles2 pr10"></span>聊天
+				</div>
+				<div class="menu-item">
+					<span class="icon-users pr10"></span>用户
+				</div>
+				<div class="menu-item">
+					<span class="icon-drawer3 pr10"></span>收藏
+				</div>
+				<div class="menu-item">
+					<span class="icon-cogs pr10"></span>设置
+				</div>
+			</div>
+		</div>
 		<div class="wrapper">
 			<div class="cover none"></div>
 			<header>
@@ -26,7 +45,7 @@
 			</header>
 			<div class="main">
 				<div class="swipe">
-					<div class="swipe-wrap">
+					<div class="swipe-wrapper">
 						<div>
 							<img src="../images/slider.jpg" alt="" width="100%">
 						</div>
@@ -102,10 +121,12 @@
 			$('.icon-menu2').click(function () {
 				$('.wrapper').addClass('open');
 				$('.cover').removeClass('none');
+				$('.menu').addClass('open');
 			});
 			$('.cover').click(function () {
 				$('.wrapper').removeClass('open');
 				$('.cover').addClass('none');
+				$('.menu').removeClass('open');
 			});
 		});
 	</script>
