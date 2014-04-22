@@ -44,8 +44,11 @@
 				</div>
 			</header>
 			<div class="main">
-				<div class="swipe">
+				<div class="swipe" id="slider">
 					<div class="swipe-wrapper">
+						<div>
+							<img src="../images/slider.jpg" alt="" width="100%">
+						</div>
 						<div>
 							<img src="../images/slider.jpg" alt="" width="100%">
 						</div>
@@ -115,20 +118,8 @@
 			</footer>
 		</div>
 	</div>
-	<script src="http://zeptojs.com/zepto.min.js"></script>
-	<script>
-		$(function () {
-			$('.icon-menu2').click(function () {
-				$('.wrapper').addClass('open');
-				$('.cover').removeClass('none');
-				$('.menu').addClass('open');
-			});
-			$('.cover').click(function () {
-				$('.wrapper').removeClass('open');
-				$('.cover').addClass('none');
-				$('.menu').removeClass('open');
-			});
-		});
-	</script>
+	<script src="../bower_components/zepto-full/zepto.min.js"></script>
+	<script src="../bower_components/swipe/swipe.js"></script>
+	<script src="../scripts/main.js"></script>
 </body>
 </html>

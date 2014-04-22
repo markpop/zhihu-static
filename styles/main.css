@@ -1,6 +1,9 @@
 body {
 	background-image: url('../images/bg.jpg'); 
 }
+.wrapper {
+	width: 100%;
+}
 /*menu*/
 .menu {
 	width: 70%;
@@ -35,6 +38,22 @@ body {
 	opacity: 0.5;
 }
 /*end menu*/
+/*slider*/
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrapper > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+/*end slider*/
 .cover {
 	position: fixed;
 	width: 100%;
@@ -61,6 +80,7 @@ body {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
+/*header*/
 .topnav {
 	height: 40px;
 	background-color: #028fd6;
@@ -69,6 +89,7 @@ body {
 	text-align: center;
 	line-height: 40px;
 }
+/*end header*/
 .list-item {
 	border-bottom: 1px solid #d3d3d3;
 }
