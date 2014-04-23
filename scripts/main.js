@@ -36,4 +36,12 @@ $(function () {
 	}
 	$('.bullet').first().addClass('active');
 	// end slider
+	// article
+	$('.icon-export').tap(function () {
+		$('.article-share').addClass('open');
+	});
+	$('.article-share-cancel').tap(function () {
+		$('.article-share').removeClass('open');
+	});
+	// end article
 });
