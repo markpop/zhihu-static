@@ -44,4 +44,11 @@ $(function () {
 		$('.article-share').removeClass('open');
 	});
 	// end article
+	//test
+	$('.icon-download4').tap(function () {
+		$(this).parent().addClass('load');
+		$('.menu-circle-progress').removeClass('none');
+		$('.icon-download4').addClass('none');
+	});
+	// end test
 });
