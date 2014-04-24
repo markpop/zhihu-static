@@ -360,6 +360,12 @@ body {
 .light {
 	background-color: #46E742;
 }
+.purple {
+	background-color: #9a5ab7;
+}
+.orange {
+	background-color: #e64d29;
+}
 .article-share-name {
 	font-size: 12px;
 }
@@ -408,3 +414,73 @@ body {
 	border-left: 1px solid #383838;
 }
 /*end footer*/
+/*setting*/
+.setting-user {
+	background-color: #fff;
+	border-top: 1px solid #d2d1d5;
+	border-bottom: 1px solid #d2d1d5;
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+}
+.wrapper.night .setting-user, .wrapper.night .setting-group {
+	background-color: #404040;
+	border-top: 1px solid #2c2c2c;
+	border-bottom: 1px solid #2c2c2c;
+}
+.setting-user-img {
+	width: 30px;
+	height: 30px;
+	background-color: #e8e8e8;
+	color: #b4b4b4;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -15px;
+	margin-top: 8px;
+}
+.setting-user-icon {
+	font-size: 20px;
+}
+.setting-group {
+	background-color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-top: 1px solid #d2d1d5;
+	border-bottom: 1px solid #d2d1d5;
+}
+.setting-item {
+	padding: 10px 10px 0 0;
+	line-height: 24px;
+}
+.setting-item-icon {
+	width: 24px;
+	height: 24px;
+	color: #fff;
+	line-height: 24px;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.setting-item-message {
+	color: #bbb;
+	font-size: 12px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e4e4e6;
+}
+.wrapper.night .setting-item-message {
+	border-bottom: 1px solid #2c2c2c;
+}
+.setting-bg {
+	background-color: #f8f8f8;
+	padding: 20px 0;
+}
+.wrapper.night .setting-bg {
+	background-color: #343434;
+}
+/*end setting*/
