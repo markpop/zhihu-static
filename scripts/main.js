@@ -53,10 +53,10 @@ $(function () {
 	// end test
 	// comment
 	$('.icon-compose').tap(function () {
-		$('.comment-write').addClass('open');
+		$('.comment-publish').addClass('open');
 	});
-	$('.tx').tap(function () {
-		$('.comment-write').removeClass('open');
+	$('.comment-publish-cancel').tap(function () {
+		$('.comment-publish').removeClass('open');
 	});
 	// end comment
 });
