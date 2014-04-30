@@ -51,4 +51,12 @@ $(function () {
 		$('.icon-download4').addClass('none');
 	});
 	// end test
+	// comment
+	$('.icon-compose').tap(function () {
+		$('.comment-write').addClass('open');
+	});
+	$('.tx').tap(function () {
+		$('.comment-write').removeClass('open');
+	});
+	// end comment
 });
